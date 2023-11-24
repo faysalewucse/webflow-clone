@@ -3,7 +3,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Headline = () => {
   return (
-    <div className="bg-primary hover:bg-primary2 text-white p-4 transition cursor-pointer">
+    <div className="bg-primary hover:bg-primary2 text-white p-4 text-sm transition cursor-pointer">
       <Container>
         <div className="flex justify-between">
           <p>

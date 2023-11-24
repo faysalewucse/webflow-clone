@@ -1,15 +1,8 @@
-import Headline from "./components/navbar/Headline";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./pages/homepage/Home";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
 
 const App = () => {
-  return (
-    <>
-      <Headline />
-      <Navbar />
-      <Home />
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
