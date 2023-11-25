@@ -6,7 +6,7 @@ const TrustedOrg = ({ borderColor, title, middleText, midTitle }) => {
 
   return (
     <div
-      className="w-1/3 group/item h-96 flex flex-col justify-between text-white py-5 px-8 transition cursor-pointer rounded"
+      className="w-[32vw] group/item h-[40vh] flex flex-col justify-between text-white py-5 px-8 transition cursor-pointer rounded"
       style={{
         backgroundColor: hovered ? borderColor : "#080808",
         border: `1px solid ${hovered ? borderColor : borderColor}`,

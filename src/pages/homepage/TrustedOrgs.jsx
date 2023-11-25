@@ -1,6 +1,15 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import TrustedOrg from "../../components/cards/TrustedOrg";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
 const TrustedOrgs = () => {
   return (
     <div>
@@ -13,31 +22,49 @@ const TrustedOrgs = () => {
           <FaArrowRightLong />
         </div>
       </div>
-      <div className="flex py-20 gap-10 px-5">
-        <TrustedOrg
-          borderColor={"orangeRed"}
-          title={"GRUBHUB"}
-          middleText={">1.3M"}
-          midTitle={"Views"}
-        />
-        <TrustedOrg
-          borderColor={"royalBlue"}
-          title={"GRUBHUB"}
-          middleText={"3X"}
-          midTitle={"Views"}
-        />
-        {/* <TrustedOrg
-          borderColor={"orchid"}
-          title={"GRUBHUB"}
-          middleText={"4X"}
-          midTitle={"Views"}
-        />
-        <TrustedOrg
-          borderColor={"orchid"}
-          title={"GRUBHUB"}
-          middleText={"4X"}
-          midTitle={"Views"}
-        /> */}
+      <div className="px-5 py-20">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={100}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <TrustedOrg
+              borderColor={"orangeRed"}
+              title={"GRUBHUB"}
+              middleText={">1.3M"}
+              midTitle={"Views"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <TrustedOrg
+              borderColor={"royalBlue"}
+              title={"GRUBHUB"}
+              middleText={"3X"}
+              midTitle={"Views"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <TrustedOrg
+              borderColor={"orchid"}
+              title={"GRUBHUB"}
+              middleText={"4X"}
+              midTitle={"Views"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <TrustedOrg
+              borderColor={"orchid"}
+              title={"GRUBHUB"}
+              middleText={"4X"}
+              midTitle={"Views"}
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
