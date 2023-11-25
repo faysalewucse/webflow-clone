@@ -9,3 +9,7 @@
 .transition {
   @apply transition-all duration-300;
 }
+
+.tall-text {
+  line-height: 66px;
+}

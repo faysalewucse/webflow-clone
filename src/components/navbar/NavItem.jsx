@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-const NavItem = ({ item }) => {
+const NavItem = ({ item, underlined, device }) => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
 
@@ -15,11 +15,21 @@ const NavItem = ({ item }) => {
   return (
     <div
       onClick={() => dropDownHandler(item)}
-      className={`flex items-center gap-1 border-b-2 border-primary border-opacity-0 hover:border-opacity-100 transition cursor-pointer py-3 ${
+      className={`flex items-center w-full ${
+        device === "small" && "justify-between px-5 text-dark bg-white"
+      } gap-1 ${
+        !underlined && "border-b-2"
+      } border-primary border-opacity-0 hover:border-opacity-100 transition cursor-pointer py-4 ${
         open && "border-opacity-100"
       }`}
     >
-      <p>{item.label}</p>
+      <p
+        className={`${underlined && "p-0.5 border-b hover:border-dark"} ${
+          device === "small" && "hover:text-primary"
+        }`}
+      >
+        {item.label}
+      </p>
       {item.dropDownComponent && (
         <i className="text-xs">{open ? <FaChevronUp /> : <FaChevronDown />}</i>
       )}

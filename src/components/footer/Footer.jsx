@@ -6,16 +6,16 @@ import webflowWhite from "/webflowWhite.png";
 
 const Footer = () => {
   return (
-    <div className="bg-dark text-white p-10">
+    <div className="bg-dark text-white md:p-10 p-5">
       <Container>
-        <div className="flex gap-5">
-          <div className="w-40">
+        <div className="md:flex gap-5">
+          <div className="w-40 mb-5 md:mb-0">
             <img src={webflowWhite} className="w-14 mb-5" alt="" />
             <p className="text-dark2">
               © 2023 Webflow, Inc. All rights reserved
             </p>
           </div>
-          <div className="flex-1 flex justify-between">
+          <div className="flex-1 md:flex justify-between">
             <div>
               <FooterItem title={"Product"} item={routesData.product} />
               <FooterItem title={"Compare"} item={routesData.compare} />

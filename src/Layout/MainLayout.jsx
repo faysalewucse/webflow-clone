@@ -8,7 +8,7 @@ export const MainLayout = () => {
     <div>
       <Headline />
       <Navbar />
-      <div className="min-h-[90vh] dark:bg-slate-900">
+      <div className="min-h-[90vh] bg-dark">
         <Outlet />
       </div>
       <Footer />
