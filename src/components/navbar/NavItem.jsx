@@ -1,14 +1,13 @@
-import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-const NavItem = ({ item, underlined, device }) => {
+const NavItem = ({ item, underlined, device, open, setOpen }) => {
   const navigate = useNavigate();
-  const [open, setOpen] = useState(false);
 
   const dropDownHandler = (navItem) => {
     if (navItem.dropDownComponent) {
-      setOpen(!open);
+      if (open) setOpen("");
+      else setOpen(navItem.label);
     } else navigate(`/${item.route}`);
   };
 
@@ -31,8 +30,11 @@ const NavItem = ({ item, underlined, device }) => {
         {item.label}
       </p>
       {item.dropDownComponent && (
-        <i className="text-xs">{open ? <FaChevronUp /> : <FaChevronDown />}</i>
+        <i className="text-xs">
+          {open === item.label ? <FaChevronUp /> : <FaChevronDown />}
+        </i>
       )}
+      {open === item.label && item.dropDownComponent}
     </div>
   );
 };

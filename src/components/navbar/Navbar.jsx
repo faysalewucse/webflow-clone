@@ -8,9 +8,11 @@ import Solution from "./Solution";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
+import GetStartedButton from "../GetStartedButton";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [open, setOpen] = useState("");
 
   const navItems = [
     {
@@ -51,11 +53,17 @@ const Navbar = () => {
         <div className="flex flex-col justify-between h-full">
           <div>
             {navItems.map((item) => (
-              <NavItem device="small" item={item} key={item.id} />
+              <NavItem
+                open={open}
+                setOpen={setOpen}
+                device="small"
+                item={item}
+                key={item.id}
+              />
             ))}
           </div>
           <div>
-            <div className="flex justify-between px-5 text-dark gap-5 mb-3">
+            <div className="flex justify-between px-5 text-dark gap-5">
               <Link className="border border-dark2/20 p-4 text-center rounded-md w-full hover:text-primary">
                 Login
               </Link>
@@ -63,7 +71,9 @@ const Navbar = () => {
                 Contact Sales
               </Link>
             </div>
-            <Button className="" text={"Get started —it's free"} />
+            <div className="m-5">
+              <GetStartedButton />
+            </div>
           </div>
         </div>
       </div>

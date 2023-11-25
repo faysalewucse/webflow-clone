@@ -1,9 +1,12 @@
+import { RxCursorArrow } from "react-icons/rx";
+
 export const routesData = {
   product: [
     {
       label: "Designer",
       route: "/",
-      description: "",
+      icon: <RxCursorArrow />,
+      description: "Lorem Ipsum is Lorem Ipsum and   Lorem Ipsum is Lorem",
     },
     {
       label: "CMS",
@@ -17,6 +20,11 @@ export const routesData = {
     },
     {
       label: "Localization",
+      route: "/",
+      description: "",
+    },
+    {
+      label: "Ecommerce",
       route: "/",
       description: "",
     },
@@ -47,11 +55,6 @@ export const routesData = {
     },
     {
       label: "DevLink",
-      route: "/",
-      description: "",
-    },
-    {
-      label: "Ecommerce",
       route: "/",
       description: "",
     },
