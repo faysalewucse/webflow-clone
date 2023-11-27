@@ -6,6 +6,7 @@ import Brands from "./Brands";
 import Templates from "./Templates";
 import TrustedOrgs from "./TrustedOrgs";
 import FourLines from "./lines/FourLines";
+import app1 from "../../assets/webflow-apps/app1.jpg";
 
 const Home = () => {
   return (
@@ -28,6 +29,14 @@ const Home = () => {
         description={"Tools to help you scale your site with your business."}
         button={<GetStartedButton />}
       />
+      <div className="mx-auto relative h-40 w-40">
+        <div className="border border-primary h-40 w-40 rounded-md animate-ping"></div>
+        <img
+          className="absolute top-0 rounded-lg transition border border-primary"
+          src={app1}
+          alt=""
+        />
+      </div>
       <Templates
         heading={"Webflow Enterprise"}
         description={
