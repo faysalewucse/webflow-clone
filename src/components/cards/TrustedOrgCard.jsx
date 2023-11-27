@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-const TrustedOrg = ({ borderColor, title, middleText, midTitle }) => {
+const TrustedOrgCard = ({ borderColor, title, middleText, midTitle }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
     <div
-      className="w-[32vw] group/item h-[40vh] flex flex-col justify-between text-white py-5 px-8 transition cursor-pointer rounded"
+      className="w-[350px] group/item h-[40vh] flex flex-col justify-between text-white py-5 px-8 transition cursor-pointer rounded shadow-2xl"
       style={{
         backgroundColor: hovered ? borderColor : "#080808",
         border: `1px solid ${hovered ? borderColor : borderColor}`,
@@ -26,4 +26,4 @@ const TrustedOrg = ({ borderColor, title, middleText, midTitle }) => {
   );
 };
 
-export default TrustedOrg;
+export default TrustedOrgCard;

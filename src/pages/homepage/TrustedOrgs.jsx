@@ -1,5 +1,4 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-import TrustedOrg from "../../components/cards/TrustedOrg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,65 +8,69 @@ import "swiper/css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import TrustedOrgCard from "../../components/cards/TrustedOrgCard";
+import Container from "../../components/Container";
 
-const TrustedOrgs = () => {
+const TrustedOrgCards = () => {
   return (
     <div>
-      <div className="px-5 text-white flex items-end">
-        <h1 className="text-6xl font-semibold scale-y-105 tracking-tighter">
-          Trusted by 200,000+ leading organizations
-        </h1>
-        <div className="flex gap-10 text-3xl">
-          <FaArrowLeftLong />
-          <FaArrowRightLong />
+      <Container>
+        <div className="px-5 text-white flex items-end justify-between">
+          <h1 className="lg:text-5xl lg:w-3/4 text-6xl font-semibold scale-y-105 tracking-tighter justify-between">
+            Trusted by 200,000+ leading organizations
+          </h1>
+          <div className="flex gap-10 text-3xl">
+            <FaArrowLeftLong />
+            <FaArrowRightLong />
+          </div>
         </div>
-      </div>
-      <div className="px-5 py-20">
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={100}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <TrustedOrg
-              borderColor={"orangeRed"}
-              title={"GRUBHUB"}
-              middleText={">1.3M"}
-              midTitle={"Views"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TrustedOrg
-              borderColor={"royalBlue"}
-              title={"GRUBHUB"}
-              middleText={"3X"}
-              midTitle={"Views"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TrustedOrg
-              borderColor={"orchid"}
-              title={"GRUBHUB"}
-              middleText={"4X"}
-              midTitle={"Views"}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <TrustedOrg
-              borderColor={"orchid"}
-              title={"GRUBHUB"}
-              middleText={"4X"}
-              midTitle={"Views"}
-            />
-          </SwiperSlide>
-        </Swiper>
-      </div>
+        <div className="px-5 py-20">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={100}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <TrustedOrgCard
+                borderColor={"orangeRed"}
+                title={"GRUBHUB"}
+                middleText={">1.3M"}
+                midTitle={"Views"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TrustedOrgCard
+                borderColor={"royalBlue"}
+                title={"GRUBHUB"}
+                middleText={"3X"}
+                midTitle={"Views"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TrustedOrgCard
+                borderColor={"orchid"}
+                title={"GRUBHUB"}
+                middleText={"4X"}
+                midTitle={"Views"}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <TrustedOrgCard
+                borderColor={"orchid"}
+                title={"GRUBHUB"}
+                middleText={"4X"}
+                midTitle={"Views"}
+              />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </Container>
     </div>
   );
 };
 
-export default TrustedOrgs;
+export default TrustedOrgCards;
