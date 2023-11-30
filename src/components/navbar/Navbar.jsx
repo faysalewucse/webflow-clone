@@ -12,7 +12,7 @@ import GetStartedButton from "../GetStartedButton";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
-  const [open, setOpen] = useState("");
+  const [navItemOpen, setNavItemOpen] = useState("");
 
   const navItems = [
     {
@@ -54,10 +54,10 @@ const Navbar = () => {
           <div>
             {navItems.map((item) => (
               <NavItem
-                open={open}
-                setOpen={setOpen}
-                device="small"
+                device={"small"}
                 item={item}
+                open={navItemOpen}
+                setOpen={setNavItemOpen}
                 key={item.id}
               />
             ))}
