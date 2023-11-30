@@ -12,9 +12,14 @@ const Localization = () => {
       }
       bottomText={"Learn more"}
     >
-      <div className="relative w-1/2 left-96 top-32 bg-dark2 rounded-lg">
-        <div className="absolute left-1/2 -translate-x-12 -top-20">
-          <ImagePing image={web} scaleAnimation={false} />
+      <div className="relative w-1/2 left-1/2 top-10 bg-dark2 rounded-lg">
+        <div className="absolute left-52 transform -translate-x-1/2 -top-20 bg-dark">
+          <ImagePing
+            borderColor={"#7c3aed"}
+            image={web}
+            extraStyle={"h-20 w-20"}
+            scaleAnimation={false}
+          />
         </div>
         <img className="border-indigo-500 p-5" src={localization} alt="local" />
       </div>

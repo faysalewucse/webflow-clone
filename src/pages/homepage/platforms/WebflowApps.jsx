@@ -25,11 +25,31 @@ const WebflowApps = () => {
       />
       <img className="absolute -right-1/2 top-10 h-full" src={soft1} alt="" />
 
-      <ImagePing position={"top-10 left-1/2"} image={app1} />
-      <ImagePing position={"top-40 left-80"} image={app2} />
-      <ImagePing position={"top-64 left-1/2"} image={app3} />
-      <ImagePing position={"top-80 left-2/3"} image={app4} />
-      <ImagePing position={"top-96 left-80"} image={app5} />
+      <ImagePing
+        borderColor={"#146EF5"}
+        position={"top-10 left-1/2"}
+        image={app1}
+      />
+      <ImagePing
+        borderColor={"#146EF5"}
+        position={"top-40 left-80"}
+        image={app2}
+      />
+      <ImagePing
+        borderColor={"#146EF5"}
+        position={"top-64 left-1/2"}
+        image={app3}
+      />
+      <ImagePing
+        borderColor={"#146EF5"}
+        position={"top-80 left-2/3"}
+        image={app4}
+      />
+      <ImagePing
+        borderColor={"#146EF5"}
+        position={"top-96 left-80"}
+        image={app5}
+      />
     </SharedComponent>
   );
 };

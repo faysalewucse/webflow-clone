@@ -3,6 +3,7 @@ import GetStartedButton from "../../components/GetStartedButton";
 import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";
 import Brands from "./Brands";
+import Enterprises from "./Enterprises";
 import Templates from "./Templates";
 import TrustedOrgs from "./TrustedOrgs";
 import FourLines from "./lines/FourLines";
@@ -37,6 +38,8 @@ const Home = () => {
         }
         button={<Button size="large" text={"Discover Enterprise"} />}
       />
+      <Enterprises />
+      <Brands />
     </div>
   );
 };
