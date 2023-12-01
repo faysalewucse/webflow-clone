@@ -79,16 +79,23 @@ const Navbar = () => {
       </div>
       <Container>
         <div className="px-4 flex items-center justify-between">
-          <Branding />
+          <div className="flex gap-5">
+            <Branding />
 
-          <div className={`hidden lg:flex items-center gap-7`}>
-            {navItems.map((item) => (
-              <NavItem item={item} key={item.id} />
-            ))}
+            <div className={`hidden lg:flex items-center gap-7`}>
+              {navItems.map((item) => (
+                <NavItem
+                  item={item}
+                  open={navItemOpen}
+                  setOpen={setNavItemOpen}
+                  key={item.id}
+                />
+              ))}
+            </div>
           </div>
 
-          <div className="flex gap-2 items-center">
-            <div className="flex gap-2 items-center">
+          <div className="flex gap-5 items-center">
+            <div className="flex gap-5 items-center">
               <div className="hidden md:block">
                 <NavItem
                   underlined={true}

@@ -4,17 +4,17 @@ import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";
 import Brands from "./Brands";
 import Enterprises from "./Enterprises";
+import GetStartedFree from "./GetStartedFree";
 import Guidence from "./Guidence";
+import Portfolio from "./Portfolio";
 import Templates from "./Templates";
 import TrustedOrgs from "./TrustedOrgs";
-import FourLines from "./lines/FourLines";
 import Platforms from "./platforms/Platforms";
 
 const Home = () => {
   return (
     <div>
       {/* <LightRunning /> */}
-      <FourLines />
       <Banner />
       <BannerImage1 />
       <Brands />
@@ -42,6 +42,8 @@ const Home = () => {
       <Enterprises />
       <Brands />
       <Guidence />
+      <Portfolio />
+      <GetStartedFree />
     </div>
   );
 };
