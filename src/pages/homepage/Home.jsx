@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";
 import Brands from "./Brands";
 import Enterprises from "./Enterprises";
+import Guidence from "./Guidence";
 import Templates from "./Templates";
 import TrustedOrgs from "./TrustedOrgs";
 import FourLines from "./lines/FourLines";
@@ -40,6 +41,7 @@ const Home = () => {
       />
       <Enterprises />
       <Brands />
+      <Guidence />
     </div>
   );
 };

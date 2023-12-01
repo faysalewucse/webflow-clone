@@ -1,16 +1,18 @@
 const ImagePing = ({
   image,
   position,
-  scaleAnimation,
+  scaleAnimation = true,
   borderColor,
   extraStyle,
 }) => {
   return (
     <div className={`group/item absolute ${position}`}>
-      <div className="mx-auto relative h-40 w-40">
+      <div className="mx-auto relative h-32 w-32">
         <div
           style={{ borderColor: borderColor }}
-          className="border h-40 w-40 rounded-md animate-ping "
+          className={`border h-32 w-32 rounded-md ${
+            scaleAnimation && "animate-ping"
+          }`}
         ></div>
         <img
           style={{

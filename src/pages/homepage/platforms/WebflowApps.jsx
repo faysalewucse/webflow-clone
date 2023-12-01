@@ -23,7 +23,11 @@ const WebflowApps = () => {
         src={circle}
         alt="circle"
       />
-      <img className="absolute -right-1/2 top-10 h-full" src={soft1} alt="" />
+      <img
+        className="absolute md:w-1/2 -right-1/2 top-10 h-full"
+        src={soft1}
+        alt=""
+      />
 
       <ImagePing
         borderColor={"#146EF5"}

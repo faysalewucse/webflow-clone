@@ -26,8 +26,20 @@ const TrustedOrgCards = () => {
         </div>
         <div className="px-5 py-20">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={100}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+            }}
             pagination={{
               clickable: true,
             }}

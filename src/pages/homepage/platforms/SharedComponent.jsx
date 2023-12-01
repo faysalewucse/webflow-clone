@@ -4,9 +4,14 @@ const SharedComponent = ({
   bottomText,
   bottomTextHandler,
   children,
+  bordered = true,
 }) => {
   return (
-    <div className="bg-black relative h-[600px] rounded overflow-hidden text-white border border-dark2/25 p-10">
+    <div
+      className={`relative rounded overflow-hidden ${
+        bordered && "p-10 text-white h-[600px] bg-black border border-dark2/25"
+      }`}
+    >
       <div>
         <h1 className="bold text-2xl">{title}</h1>
         <p className="my-5 w-80">{description}</p>
