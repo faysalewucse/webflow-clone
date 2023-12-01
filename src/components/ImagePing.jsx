@@ -7,10 +7,10 @@ const ImagePing = ({
 }) => {
   return (
     <div className={`group/item absolute ${position}`}>
-      <div className="mx-auto relative h-32 w-32">
+      <div className="mx-auto relative md:h-32 md:w-32 h-10 w-10">
         <div
           style={{ borderColor: borderColor }}
-          className={`border h-32 w-32 rounded-md ${
+          className={`border md:h-32 h-10 md:w-32 w-10 rounded-md ${
             scaleAnimation && "animate-ping"
           }`}
         ></div>

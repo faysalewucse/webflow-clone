@@ -10,8 +10,8 @@ const Portfolio = () => {
     <div className="relative bg-dark p-20">
       {/* Button */}
       <div className="z-10 sticky top-1/2 flex items-center bg-white w-fit mx-auto p-5 rounded-md">
-        <img className="w-20" src={w} alt="w" />
-        <h1 className="text-6xl font-bold">Made in Webflow</h1>
+        <img className="md:w-20 w-10" src={w} alt="w" />
+        <h1 className="md:text-6xl font-bold">Made in Webflow</h1>
       </div>
       <div className="flex justify-between -z-10">
         <img

@@ -3,9 +3,9 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Headline = () => {
   return (
-    <div className="bg-primary hover:bg-primary2 text-white py-4 text-sm transition cursor-pointer">
+    <div className="bg-primary hover:bg-primary2 text-white md:py-4 py-2 text-sm transition cursor-pointer">
       <Container>
-        <div className="px-4 md:flex justify-between">
+        <div className="md:px-4 px-2 md:flex justify-between">
           <p className="scale-y-105">
             This just in: We surveyed 500 marketing leaders on the state of
             their website

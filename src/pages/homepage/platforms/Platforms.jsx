@@ -7,7 +7,7 @@ import WebflowApps from "./WebflowApps";
 const Platforms = () => {
   return (
     <Container>
-      <div className="flex flex-col gap-10">
+      <div className="p-5 flex flex-col gap-10">
         <WebflowApps />
         <Collaboration />
         <Seo />

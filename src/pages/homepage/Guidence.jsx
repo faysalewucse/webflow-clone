@@ -16,7 +16,7 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const Guidence = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10 px-5">
       <Container>
         <h1 className="min-[900px]:w-[900px] lg:text-[80px] text-[64px] font-bold scale-y-105 tracking-tighter">
           We’ll help you get started

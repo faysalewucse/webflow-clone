@@ -15,11 +15,11 @@ const TrustedOrgCards = () => {
   return (
     <div>
       <Container>
-        <div className="px-5 text-white flex items-end justify-between">
-          <h1 className="lg:text-5xl lg:w-3/4 text-6xl font-semibold scale-y-105 tracking-tighter justify-between">
+        <div className="px-5 text-white md:flex items-end justify-between">
+          <h1 className="lg:text-5xl lg:w-3/4 md:text-6xl text-5xl font-semibold scale-y-105 tracking-tighter justify-between">
             Trusted by 200,000+ leading organizations
           </h1>
-          <div className="flex gap-10 text-3xl">
+          <div className="flex justify-end gap-10 text-3xl mt-10 md:mt-0">
             <FaArrowLeftLong />
             <FaArrowRightLong />
           </div>

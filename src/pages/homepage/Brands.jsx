@@ -16,18 +16,18 @@ const Brands = () => {
   return (
     <div className="py-20">
       <Marquee>
-        <img className="w-40 object-cover mr-10" src={brand1} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand2} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand3} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand4} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand5} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand6} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand7} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand8} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand9} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand10} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand11} alt="" />
-        <img className="w-40 object-cover mr-10" src={brand12} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand1} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand2} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand3} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand4} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand5} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand6} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand7} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand8} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand9} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand10} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand11} alt="" />
+        <img className="md:w-40 w-20 object-cover mr-10" src={brand12} alt="" />
       </Marquee>
     </div>
   );
