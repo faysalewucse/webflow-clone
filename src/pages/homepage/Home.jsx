@@ -1,5 +1,6 @@
 import Button from "../../components/Button";
 import GetStartedButton from "../../components/GetStartedButton";
+import ThreeDCard from "./3D/3dCard1";
 import Accordions from "./Accordions";
 import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";
@@ -18,6 +19,7 @@ const Home = () => {
       {/* <LightRunning /> */}
       <Banner />
       <BannerImage1 />
+      {/* <ThreeDCard /> */}
       <Brands />
       <Templates
         heading={"Creative power that goes beyond templates"}

@@ -5,10 +5,10 @@ import NavItem from "./NavItem";
 import Product from "./Product";
 import Resources from "./Resources";
 import Solution from "./Solution";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import GetStartedButton from "../GetStartedButton";
+import { useState } from "react";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -43,7 +43,10 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-50 bg-dark text-white border-b border-gray-800 text-sm">
+    <div
+      id="home"
+      className="sticky top-0 z-50 bg-dark text-white border-b border-gray-800 text-sm"
+    >
       <div
         className={`w-full md:hidden flex flex-col absolute bg-white transition-all duration-700 ${
           navOpen ? "top-14 h-[100vh] z-50" : "z-0 top-0 h-0 overflow-hidden"

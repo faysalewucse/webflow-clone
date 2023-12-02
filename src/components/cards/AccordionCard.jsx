@@ -6,7 +6,7 @@ const Accordion = ({ image, icon, title, content, index }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setOpen((prevOpen) => (prevOpen % 5) + 1);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [open]);
@@ -14,8 +14,8 @@ const Accordion = ({ image, icon, title, content, index }) => {
   return (
     <div
       className={`${
-        index === open && "md:opacity-100 bg-dark3"
-      } text-white md:opacity-50 h-fit transition-all duration-700 rounded md:mb-0 mb-10`}
+        index === open ? "opacity-100 bg-dark3" : "opacity-50"
+      } text-white h-fit transition-all duration-700 rounded md:mb-0 mb-10`}
     >
       <img className="md:hidden" src={image} alt="" />
       <div>

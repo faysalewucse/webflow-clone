@@ -12,7 +12,7 @@ const Resources = () => {
           <div className="md:w-4/6 p-10 border-r">
             <h6 className="text-dark2 text-lg">BUILD A WEBSITE</h6>
             <Divider color="border-gray-100" />
-            <div className="text-dark grid grid-cols-3 gap-5 mt-5">
+            <div className="text-dark grid md:grid-cols-3 grid-cols-2 gap-5 mt-5">
               {routesData.product.slice(0, 5).map((item) => (
                 <DropdownSingleItem
                   key={item.label}
