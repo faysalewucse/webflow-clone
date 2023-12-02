@@ -13,29 +13,33 @@ const Portfolio = () => {
         <img className="md:w-20 w-10" src={w} alt="w" />
         <h1 className="md:text-6xl font-bold">Made in Webflow</h1>
       </div>
-      <div className="flex justify-between -z-10">
-        <img
-          className="w-80 hover:brightness-100 transition brightness-50"
-          src={port1}
-          alt="portfolio-1"
-        />
-        <img
-          className="w-80 hover:brightness-100 transition brightness-50 mt-20"
-          src={port2}
-          alt="portfolio-2"
-        />
-      </div>
+
       <img
+        data-aos="fade-up"
+        className="w-80 hover:brightness-100 transition brightness-50"
+        src={port1}
+        alt="portfolio-1"
+      />
+      <img
+        data-aos="fade-up"
+        className="w-80 hover:brightness-100 transition brightness-50 mt-20"
+        src={port2}
+        alt="portfolio-2"
+      />
+      <img
+        data-aos="fade-up"
         className="w-80 hover:brightness-100 transition brightness-50"
         src={port3}
         alt="portfolio-3"
       />
       <img
+        data-aos="fade-up"
         className="w-80 hover:brightness-100 transition brightness-50"
         src={port4}
         alt="portfolio-4"
       />
       <img
+        data-aos="fade-up"
         className="w-80 hover:brightness-100 transition brightness-50"
         src={port5}
         alt="portfolio-5"

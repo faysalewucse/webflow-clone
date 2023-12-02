@@ -1,5 +1,6 @@
 import Button from "../../components/Button";
 import GetStartedButton from "../../components/GetStartedButton";
+import Accordions from "./Accordions";
 import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";
 import Brands from "./Brands";
@@ -25,6 +26,7 @@ const Home = () => {
         }
         button={<GetStartedButton />}
       />
+      <Accordions />
       <TrustedOrgs />
       <Templates
         heading={"A platform designed for growth"}

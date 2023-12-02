@@ -6,6 +6,7 @@ const TrustedOrgCard = ({ borderColor, title, middleText, midTitle }) => {
 
   return (
     <div
+      data-aos="fade-up-left"
       className="md:w-[350px] group/item h-[40vh] flex flex-col justify-between text-white py-5 px-8 transition-all duration-700 hover:text-dark cursor-pointer rounded shadow-2xl"
       style={{
         backgroundColor: hovered ? borderColor : "#080808",

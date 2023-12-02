@@ -8,7 +8,7 @@ import ent4 from "../../assets/enterprices/ent4.png";
 const Enterprises = () => {
   return (
     <Container>
-      <div className="p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="p-10 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10">
         <EnterpriseCard
           icon={ent1}
           title={"A scalable,  reliable platform"}

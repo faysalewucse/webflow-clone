@@ -8,7 +8,10 @@ const GuidenceCard = ({
   bottomTextHandler,
 }) => {
   return (
-    <div className="text-black border p-5 h-[500px] rounded">
+    <div
+      data-aos="fade-left"
+      className="text-black border p-5 h-[500px] rounded"
+    >
       <div className="h-52 group/item overflow-hidden mb-10">
         <img
           className="h-full w-full object-cover group-hover/item:scale-110 transition"

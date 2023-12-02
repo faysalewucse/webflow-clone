@@ -32,3 +32,17 @@
 .animate-ping {
   animation: ping 1s cubic-bezier(0, 0, 0.1, 1) infinite;
 }
+
+/* Progress Effect */
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.progress-anim {
+  animation: progress 5s linear;
+}

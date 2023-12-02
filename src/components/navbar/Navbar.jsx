@@ -43,7 +43,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="relative bg-dark text-white border-b border-gray-800 text-sm">
+    <div className="sticky top-0 z-50 bg-dark text-white border-b border-gray-800 text-sm">
       <div
         className={`w-full md:hidden flex flex-col absolute bg-white transition-all duration-700 ${
           navOpen ? "top-14 h-[100vh] z-50" : "z-0 top-0 h-0 overflow-hidden"
