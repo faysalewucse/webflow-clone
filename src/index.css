@@ -46,3 +46,29 @@
 .progress-anim {
   animation: progress 10s linear;
 }
+
+/* Border Effect */
+@keyframes ping2 {
+  0% {
+    border: 1px solid #171717;
+  }
+  100% {
+    border: 1px solid #22c55e;
+  }
+}
+
+/* Border Effect */
+@keyframes expand {
+  0% {
+    border: 1px solid #171717;
+  }
+  100% {
+    border: 1px solid #22c55e;
+  }
+}
+
+.border-anim {
+  animation: expand 0.5s linear;
+}
+
+/* Add more classes and adjust animation-delay for each */

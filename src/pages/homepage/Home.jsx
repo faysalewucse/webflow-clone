@@ -1,6 +1,5 @@
 import Button from "../../components/Button";
 import GetStartedButton from "../../components/GetStartedButton";
-import ThreeDCard from "./3D/3dCard1";
 import Accordions from "./Accordions";
 import Banner from "./Banner";
 import BannerImage1 from "./BannerImage1";

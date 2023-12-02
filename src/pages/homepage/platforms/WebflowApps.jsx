@@ -24,34 +24,34 @@ const WebflowApps = () => {
         alt="circle"
       />
       <img
-        className="absolute md:w-1/2 -right-1/2 top-10 h-full"
+        className="absolute md:w-1/2 md:-right-1/2 md:top-10 object-left-top object-cover h-full"
         src={soft1}
         alt=""
       />
 
       <ImagePing
         borderColor={"#146EF5"}
-        position={"top-10 left-1/2"}
+        position={"md:top-10 top-3/4 left-1/2"}
         image={app1}
       />
       <ImagePing
         borderColor={"#146EF5"}
-        position={"top-40 left-80"}
+        position={"md:top-40 bottom-0 md:left-80"}
         image={app2}
       />
       <ImagePing
         borderColor={"#146EF5"}
-        position={"top-64 left-1/2"}
+        position={"md:top-64 top-64 md:left-1/2 right-40"}
         image={app3}
       />
       <ImagePing
         borderColor={"#146EF5"}
-        position={"top-80 left-2/3"}
+        position={"md:top-80 top-80 md:left-2/3 right-10"}
         image={app4}
       />
       <ImagePing
         borderColor={"#146EF5"}
-        position={"top-96 left-80"}
+        position={"md:top-96 top-96 md:left-80"}
         image={app5}
       />
     </SharedComponent>
