@@ -17,8 +17,8 @@ const NavItem = ({ item, underlined, device, open, setOpen }) => {
         device === "small" && "justify-between px-5 text-dark bg-white"
       } gap-1 ${
         !underlined && "border-b-2"
-      } border-primary border-opacity-0 hover:border-opacity-100 transition cursor-pointer py-4 lg:text-lg text-sm ${
-        open && "border-opacity-100"
+      } border-primary border-opacity-0 hover:border-opacity-100 transition cursor-pointer py-4 lg:text-md text-sm ${
+        open === item.label && "border-opacity-100"
       }`}
     >
       <p

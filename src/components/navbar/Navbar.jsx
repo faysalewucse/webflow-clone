@@ -8,7 +8,7 @@ import Solution from "./Solution";
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import GetStartedButton from "../GetStartedButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -42,16 +42,27 @@ const Navbar = () => {
     },
   ];
 
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+
+    return () => {
+      document.body.style.overflow = "unset"; // Ensure default overflow behavior when component unmounts
+    };
+  }, [navOpen]);
+
   return (
     <div
       id="home"
       className="sticky top-0 z-50 bg-dark text-white border-b border-gray-800 text-sm"
     >
       <div
-        className={`w-full md:hidden flex flex-col absolute bg-white transition-all duration-700 ${
-          navOpen ? "top-14 h-[100vh] z-50" : "z-0 top-0 h-0 overflow-hidden"
+        className={`w-full md:hidden flex flex-col absolute bg-white transition-all duration-700 overflow-auto ${
+          navOpen ? "top-14 h-[86vh] z-50" : "top-0 h-0 overflow-hidden"
         }`}
-        style={{ maxHeight: navOpen ? "84vh" : "0px" }}
       >
         <div className="flex flex-col justify-between h-full">
           <div>
