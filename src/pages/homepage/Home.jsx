@@ -20,6 +20,7 @@ const Home = () => {
       <BannerImage1 />
       {/* <ThreeDCard /> */}
       <Brands />
+      {/* <ThreeDCard /> */}
       <Templates
         heading={"Creative power that goes beyond templates"}
         description={

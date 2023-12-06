@@ -49,16 +49,18 @@ export default function ThreeDCard() {
   }
 
   return (
-    <div className="relative">
+    <div
+      onMouseMove={handleMouseMove}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="relative"
+    >
       <div
         className="card"
         ref={cardRef}
         style={{
           transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
         }}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
         <img
           ref={imgRef}
