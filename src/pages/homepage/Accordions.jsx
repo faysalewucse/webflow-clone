@@ -79,7 +79,7 @@ const Accordions = () => {
             <div className="absolute bottom-10 left-10 text-white text-4xl">
               {!isPlaying ? <MdPlayCircleOutline /> : <MdPauseCircleOutline />}
             </div>
-            <div className="absolute left-14 bottom-32 w-80 h-24 bg-black"></div>
+            <div className="absolute left-14 bottom-20 w-80 h-60 bg-dark"></div>
           </div>
         </div>
       </Container>

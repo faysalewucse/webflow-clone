@@ -1,17 +1,25 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// import required modules
-import { Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+import { Pagination, Navigation } from "swiper/modules";
 import TrustedOrgCard from "../../components/cards/TrustedOrgCard";
 import Container from "../../components/Container";
 
 const TrustedOrgCards = () => {
+  const handleNext = () => {
+    const swiper = document.querySelector(".mySwiper").swiper;
+    if (swiper) {
+      swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    const swiper = document.querySelector(".mySwiper").swiper;
+    if (swiper) {
+      swiper.slidePrev();
+    }
+  };
+
   return (
     <div>
       <Container>
@@ -20,12 +28,13 @@ const TrustedOrgCards = () => {
             Trusted by 200,000+ leading organizations
           </h1>
           <div className="flex justify-end gap-10 text-3xl mt-10 md:mt-0">
-            <FaArrowLeftLong />
-            <FaArrowRightLong />
+            <FaArrowLeftLong className="cursor-pointer" onClick={handlePrev} />
+            <FaArrowRightLong className="cursor-pointer" onClick={handleNext} />
           </div>
         </div>
         <div className="px-5 py-20">
           <Swiper
+            pagination={{ clickable: true }}
             breakpoints={{
               640: {
                 slidesPerView: 1,
@@ -40,10 +49,7 @@ const TrustedOrgCards = () => {
                 spaceBetween: 10,
               },
             }}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>

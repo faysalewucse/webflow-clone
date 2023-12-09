@@ -13,7 +13,7 @@ const Accordion = ({ image, icon, title, content, index }) => {
 
   return (
     <div
-      className={`${
+      className={`cursor-pointer hover:bg-dark3 ${
         index === open ? "opacity-100 bg-dark3" : "opacity-50"
       } text-white h-fit transition-all duration-700 rounded md:mb-0 mb-10`}
     >

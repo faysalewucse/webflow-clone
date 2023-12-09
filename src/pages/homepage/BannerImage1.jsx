@@ -13,9 +13,9 @@ const BannerImage1 = () => {
     const card = cardRef.current;
     const { offsetWidth: width, offsetHeight: height } = card;
     const { clientX, clientY } = event;
-    const x = clientX - card.offsetLeft - width / 2;
-    const y = clientY - card.offsetTop - height / 2;
-    var mult = 40;
+    const x = clientX - card.offsetLeft - width / 5;
+    const y = clientY - card.offsetTop - height / 5;
+    var mult = 15;
     setXRotation((y / height) * mult);
     setYRotation((x / width) * mult);
   }
@@ -39,6 +39,8 @@ const BannerImage1 = () => {
 
   return (
     <div
+      data-aos="fade-up"
+      data-aos-speed="500"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

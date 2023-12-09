@@ -4,17 +4,27 @@ import g2 from "../../assets/guidance/g2.webp";
 import g3 from "../../assets/guidance/g3.webp";
 import g4 from "../../assets/guidance/g4.webp";
 import Container from "../../components/Container";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-
-// import required modules
-import { Pagination } from "swiper/modules";
+import "swiper/swiper-bundle.css";
+import { Pagination, Navigation } from "swiper/modules";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const Guidence = () => {
+  const handleNext = () => {
+    const swiper = document.querySelector(".mySwiper")?.swiper;
+    if (swiper) {
+      swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    const swiper = document.querySelector(".mySwiper")?.swiper;
+    if (swiper) {
+      console.log("HEY");
+      swiper.slidePrev();
+    }
+  };
+
   return (
     <div className="bg-white py-10 px-5">
       <Container>
@@ -26,12 +36,13 @@ const Guidence = () => {
             Browse the Marketplace, educational videos, and customer stories to
             find what you need to succeed with Webflow.
           </p>
-          <div className="flex gap-10 text-3xl">
-            <FaArrowLeftLong />
-            <FaArrowRightLong />
+          <div className="flex justify-end gap-10 text-3xl mt-10 md:mt-0">
+            <FaArrowLeftLong className="cursor-pointer" onClick={handlePrev} />
+            <FaArrowRightLong className="cursor-pointer" onClick={handleNext} />
           </div>
         </div>
         <Swiper
+          pagination={{ clickable: true }}
           breakpoints={{
             640: {
               slidesPerView: 1,
@@ -46,10 +57,7 @@ const Guidence = () => {
               spaceBetween: 10,
             },
           }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
+          modules={[Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>

@@ -1,6 +1,8 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/router";
 import "aos/dist/aos.css";
+import "swiper/swiper-bundle.css";
+
 import { useEffect } from "react";
 import Aos from "aos";
 
