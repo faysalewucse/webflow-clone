@@ -1,5 +1,5 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavItem = ({ item, underlined, device, open, setOpen }) => {
   const navigate = useNavigate();
@@ -21,13 +21,14 @@ const NavItem = ({ item, underlined, device, open, setOpen }) => {
         open === item.label && "border-opacity-100"
       }`}
     >
-      <p
+      <Link
+        to="/all-features"
         className={`${underlined && "p-0.5 border-b hover:border-dark"} ${
           device === "small" && "hover:text-primary"
         }`}
       >
         {item.label}
-      </p>
+      </Link>
       {item.dropDownComponent && (
         <i className="text-xs">
           {open === item.label ? <FaChevronUp /> : <FaChevronDown />}
